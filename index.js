@@ -28,38 +28,43 @@
 //!TASK THREE
 //& CALCULATE_AGE
 
-var Name = prompt("enter your name");
-console.log(Name, typeof Name);
 
+var userName = (prompt('name'))
+// const userName = parseInt(prompt('userName'));
+// const age = Number(prompt('age'));
+const text = /[0-9]/
 
-if (Name == 'string'){
-    var Name = prompt("enter your name");
-    console.log(prompt, typeof prompt);
-    var birthyear = prompt;
+if (text.test(userName) === true) {
+    console.log("No");
+    var userName = (prompt('enter valid name'));
+    // const age = Number(prompt('age'));
+    // var birthyear = prompt;
+
+}
+else {
+    console.log("yes");
+    var birthyear = Number(prompt('enter valid birthyear'));
+    // const userName =(prompt('enter valid name'));
+    // var userName =prompt;
+
 }
 
-var birthyear = Number(prompt("please enter your year"))
-console.log(birthyear, typeof birthyear);
-if (birthyear === Number ||  birthyear < 1900 ||
-    birthyear >= 2010) {
 
-    console.log(prompt, typeof prompt);
-    var birthyear = Number(prompt("please enter valid year"))
-}
-
-if(birthyear<2010)
-{
-    var age = 2023-birthyear
+// if(birthyear<2010)
+// {
+//     var age = 2023-birthyear
+// }
+// 
+if (birthyear < 2010) {
+    var age = 2023 - birthyear;
 }
 console.log(age);
-document.write("Name:"+Name+"<br><hr>"+"birthyear:"+birthyear+"<br><hr>"+"age:"+age)
-
-
+document.write("Name:" + userName + "<br><hr>" + "birthyear:" + birthyear + "<br><hr>" + "age:" + age)
 
 //////////////////////////////
-//!TASK FOUR
-//& Headers----
+// //!TASK FOUR
+// //& Headers----
 
-for (let i = 1; i <= 6; i++) {
-    document.write("<h" + i + ">this is header number" + i + "<h" + i + ">");
-}
+// for (let i = 1; i <= 6; i++) {
+//     document.write("<h" + i + ">this is header number" + i + "<h" + i + ">");
+// }
